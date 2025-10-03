@@ -1,17 +1,17 @@
-fetch("footer.html")
+fetch("./footer.html")
         .then(res => res.text())
         .then(data => {
             const footerElement = document.querySelector("footer");
             if (footerElement) {
                 footerElement.innerHTML = data;
             }
-    });
+});
 
 function initHeader() {
-  fetch('header.html')
+  fetch("./header.html")
     .then(res => res.text())
     .then(data => {
-      document.querySelector('header').outerHTML = data;
+      document.querySelector("header").outerHTML = data;
 
       initNav();
       initReservation();
@@ -62,34 +62,34 @@ function initNav() {
 
 function initReservation() {
   const popupHTML = `
-    <div id="reservation-popup" style="display:none;">
-      <div class="reservation-content">
-        <span id="close-popup" class="close-btn">&times;</span>
+    <div id="reservation-popup1" style="display:none;">
+      <div class="reservation-content1">
+        <span id="close-popup1" class="close-btn">&times;</span>
         <h2>Book Your Table</h2>
-        <form id="reservation-form">
-          <label for="reservation-name">Full Name</label>
-          <input type="text" id="reservation-name" placeholder="Your Name" required>
+        <form id="reservation-form1">
+          <label for="reservation-name1">Full Name</label>
+          <input type="text" id="reservation-name1" placeholder="Your Name" required>
 
-          <label for="reservation-email">Email</label>
-          <input type="email" id="reservation-email" placeholder="example@mail.com" required>
+          <label for="reservation-email1">Email</label>
+          <input type="email" id="reservation-email1" placeholder="example@mail.com" required>
 
-          <label for="reservation-phone">Phone Number</label>
-          <input type="tel" id="reservation-phone" placeholder="+1234567890" required>
+          <label for="reservation-phone1">Phone Number</label>
+          <input type="tel" id="reservation-phone1" placeholder="+1234567890" required>
 
-          <label for="reservation-date">Date</label>
-          <input type="date" id="reservation-date" required>
+          <label for="reservation-date1">Date</label>
+          <input type="date" id="reservation-date1" required>
 
-          <label for="reservation-time">Time</label>
-          <input type="time" id="reservation-time" required>
+          <label for="reservation-time1">Time</label>
+          <input type="time" id="reservation-time1" required>
 
-          <label for="reservation-occasion">Occasion</label>
-          <input type="text" id="reservation-occasion" placeholder="Birthday, Anniversary, etc.">
+          <label for="reservation-occasion1">Occasion</label>
+          <input type="text" id="reservation-occasion1" placeholder="Birthday, Anniversary, etc.">
 
-          <label for="reservation-filial">Which Filial</label>
-          <input type="text" id="reservation-filial" placeholder="Choose filial">
+          <label for="reservation-filial1">Which Filial</label>
+          <input type="text" id="reservation-filial1" placeholder="Choose filial">
 
-          <label for="reservation-guests">Number of Guests</label>
-          <input type="number" id="reservation-guests" placeholder="2" min="1" required>
+          <label for="reservation-guests1">Number of Guests</label>
+          <input type="number" id="reservation-guests1" placeholder="2" min="1" required>
 
           <button type="submit">Reserve Now</button>
         </form>
@@ -101,9 +101,9 @@ function initReservation() {
   document.body.insertAdjacentHTML("beforeend", popupHTML);
 
   const reserveBtn = document.getElementById("reserve-btn");
-  const popup = document.getElementById("reservation-popup");
-  const closeBtn = document.getElementById("close-popup");
-  const form = document.getElementById("reservation-form");
+  const popup = document.getElementById("reservation-popup1");
+  const closeBtn = document.getElementById("close-popup1");
+  const form = document.getElementById("reservation-form1");
 
   if (!reserveBtn || !popup || !closeBtn || !form) return;
 

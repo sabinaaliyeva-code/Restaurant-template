@@ -141,7 +141,7 @@ header {
 }
 
 
-#reservation-popup {
+#reservation-popup1 {
   display: none; 
   position: fixed;
   top: 0;
@@ -154,7 +154,7 @@ header {
   z-index: 2000;
 
 }
-.reservation-content {
+.reservation-content1 {
   
   background: #fff;
   padding: 25px;
@@ -172,18 +172,18 @@ header {
   font-size: 20px;
   cursor: pointer;
 }
-.reservation-content form {
+.reservation-content1 form {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.reservation-content input {
+.reservation-content1 input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   
 }
-.reservation-content button {
+.reservation-content1 button {
   padding: 10px;
   background: chocolate;
   border: none;
@@ -191,7 +191,7 @@ header {
   cursor: pointer;
   transition: 0.3s;
 }
-.reservation-content button:hover {
+.reservation-content1 button:hover {
   background: #d35400;
 }
 @media (max-width: 780px){

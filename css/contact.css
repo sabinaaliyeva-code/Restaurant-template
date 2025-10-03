@@ -11,6 +11,13 @@ body{
   
 
 }
+.map iframe {
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+
 
 .contact-photo{
     width: 100%;
