@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+body { 
+  font-family: Arial, sans-serif; 
+  background-color:gainsboro;
+  display: grid;
+}
+.cart-area .bi-cart{
+  float: right;
+  font-size: 30px;
+  color: darkolivegreen;
+}
+.cart-area {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  
+  
+}
+h2,h3,h4 { 
+  margin-bottom: 20px; 
+  color:gray;
+}
+p{
+  margin-bottom: 20px; 
+  color: #777;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  
+}
+.cart-item img {
+  width: 100px;
+  border-radius: 6px;
+  border:4px solid darkolivegreen;
+}
+.cart-item button {
+  margin: 0 5px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cart-item button.remove {
+  background: red;
+}
+#buy-now-cart{
+  padding: 10px 30px;
+  margin: 20px;
+  color: white;
+  background-color: #ff6600;
+  font-size: 16px;
+  border: none;
+  width: 150px;
+}
+.cart-summary{
+  margin: 20px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .cart-area {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .cart-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+ 
+  .cart-item button {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+  #buy-now-cart {
+   max-width: 50px;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 780px) {
+ 
+  .cart-item img {
+    width: 100px;
+  }
+  .cart-item button {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  #buy-now-cart {
+    font-size: 12px;
+    padding: 8px 15px;
+    width: 200px;
+  }
+  .cart-item {
+  display: flex;
+  flex-direction: row;
+  
+  }
+  .cart-area{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 480px) {
+  
+  .cart-item h4{
+    font-size: 14px;
+  }
+  .cart-item p{
+    font-size: 8px;
+  }
+  
+  .cart-item button {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+  #buy-now-cart {
+    font-size: 10px;
+    padding: 10px 0px;
+    width: 100px;
+  }
+  .cart-item {
+  display: flex;
+  flex-direction: column;
+  
+  }
+  .cart-area{
+    display: flex;
+    flex-direction: row;
+  }
+  .cart-area h2{
+    font-size: 14px;
+  }
+  .cart-area .bi-cart{
+    font-size: 20px;
+  }
+  .cart-summary h3{
+       font-size: 10px;
+       margin-top: 10px ;
+       margin-bottom: 0px;
+  }
+
+}

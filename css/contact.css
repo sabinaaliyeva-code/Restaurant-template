@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+body{
+  font-family: Arial, sans-serif;
+  display:grid;
+  
+
+}
+
+.contact-photo{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    object-fit: cover;
+    
+    background-repeat: no-repeat;
+    
+}
+.contact-photo img {
+    
+    position: fixed; 
+   
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    z-index: -1; 
+    filter: brightness(70%);
+}
+p{
+    line-height: 1.6;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 100;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    background-color:white;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box; 
+}
+.left-side h3{
+    color: darkolivegreen;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 100;
+}
+.left-side p{
+     color: #ccc;
+     padding-bottom: 20px;
+     font-size: 20px;
+}
+
+.form {
+    max-width: 800px;        
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+
+.form-row input,textarea
+ {
+   width: 100%;             
+    padding: 18px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  
+    transition: 0.3s;
+ }
+    
+.form-row textarea {
+    height: 200px;           
+    resize: vertical;  
+       
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: #006699;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,102,153,0.3);
+}
+
+
+
+
+.submit {
+    
+    padding: 12px;
+    background: darkgoldenrod;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+
+.submit:hover {
+    background: goldenrod;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.contact-info {
+    width: 100%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    color: darkolivegreen;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-info p strong {
+    color: darkolivegreen;
+    margin-right: 5px;
+}
+
+.contact-info a {
+    color: darkolivegreen;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color:#333;
+}
+
+.map{
+    max-width:1200;
+    
+}
+
+
+
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.branchs{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.branchs h3{
+    color: darkolivegreen;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: left;
+}
+.branch-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.branch-info a{
+    font-size: 26px;
+    color: darkolivegreen;
+}
+
+.branch-info .branch-text{
+    border-bottom: 1px solid #ccc;
+}
+.branch-info h4{
+    color: darkolivegreen;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.branch-info h3{
+    font-size: 26px;
+    color: darkolivegreen;
+
+}
+.branchs img{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+
+
+
+@media (max-width: 768px){
+   
+    .submit{
+    
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .left-side h3{
+        font-size: 24px;
+    }
+    .left-side p{
+        font-size: 16px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px){
+    .left-side h3{
+        font-size: 20px;
+    }
+    .left-side p,.branch-info p{
+        font-size: 14px;
+    }
+    .branchs .branch-info h4{
+        font-size: 18px;
+    }
+    .form-row input,textarea
+    {
+    width: 100%;             
+    padding: 10px;
+    font-size: 14px;
+    
+   }
+   .map iframe{
+      height: 300px;
+    }
+    .contact-info h2{
+        font-size: 14px;
+    }
+    .contact-info p{
+         font-size: 11px;
+    }
+    .branchs img{
+        object-fit: cover;
+        height: 200px;
+    }
+    .branchs h3,.branch-info a{
+        font-size: 20px;
+    }
+    .contact-photo img,.contact-photo{
+        height: 200px;
+    }
+
+   
+  
+     
+}
