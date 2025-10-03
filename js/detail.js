@@ -1,7 +1,7 @@
 let quantity = 1;
 const qtyDisplay = document.getElementById("quantity");
 const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("id"); // ?id=1
+const productId = urlParams.get("id"); 
 
 const addCartBtn = document.getElementById("add-cart");
 const buyNowBtn = document.getElementById("buy-now");

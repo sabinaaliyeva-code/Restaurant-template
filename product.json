@@ -5,7 +5,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=4a0604238c26ecbaa5c7be0e028fd3f3b73d9246-5234751-images-thumbs&n=13",
     "price": 25,
     "category": "pizza",
-    "ingredients": ["Tomato sauce", "Mozzarella", "Basil", "Olive oil"]
+    "ingredients": ["Tomato sauce", "Mozzarella", "Basil", "Olive oil"],
+    "views": 0
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=b964d815ddc3607185ba9364f4c9b9719dedfa7a-8240464-images-thumbs&n=13",
     "price": 25,
     "category": "meat",
-    "ingredients": ["Beef patty", "Cheddar cheese", "Lettuce", "Tomato", "Bun"]
+    "ingredients": ["Beef patty", "Cheddar cheese", "Lettuce", "Tomato", "Bun"],
+    "views": 0
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=5e8dc6e3fd450dc38c9e43557213292c17ead27d-8310741-images-thumbs&n=13",
     "price": 25,
     "category": "fish",
-    "ingredients": ["Salmon fillet", "Broccoli", "Carrots", "Lemon", "Olive oil"]
+    "ingredients": ["Salmon fillet", "Broccoli", "Carrots", "Lemon", "Olive oil"],
+    "views": 0
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=809359f38b9d8e2be684c1af5b668a885c47012e-5879932-images-thumbs&n=13",
     "price": 25,
     "category": "fish",
-    "ingredients": ["Rice", "Nori", "Salmon", "Tuna", "Soy sauce", "Wasabi"]
+    "ingredients": ["Rice", "Nori", "Salmon", "Tuna", "Soy sauce", "Wasabi"],
+    "views": 0
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=034bf0fb050e39fb4f2ade034b619c717fd62f4a-5875829-images-thumbs&n=13",
     "price": 25,
     "category": "meat",
-    "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Bacon", "Black pepper"]
+    "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Bacon", "Black pepper"],
+    "views": 0
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=40aa10bd06efcc73f4fd30854855f4b6a27f6e9f-5213158-images-thumbs&n=13",
     "price": 25,
     "category": "dessert",
-    "ingredients": ["Mascarpone", "Coffee", "Ladyfingers", "Cocoa powder", "Sugar"]
+    "ingredients": ["Mascarpone", "Coffee", "Ladyfingers", "Cocoa powder", "Sugar"],
+    "views": 0
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=978c1f74e2e6ebbe687c316a1cbc740094d3d5e6-5232078-images-thumbs&n=13",
     "price": 25,
     "category": "meat",
-    "ingredients": ["Beef steak", "Garlic", "Rosemary", "Butter", "Salt", "Pepper"]
+    "ingredients": ["Beef steak", "Garlic", "Rosemary", "Butter", "Salt", "Pepper"],
+    "views": 0
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=bfbce18f58dd6cc44f338c75dde37099c4a7c019-9154408-images-thumbs&n=13",
     "price": 25,
     "category": "dessert",
-    "ingredients": ["Milk", "Cream", "Vanilla", "Sugar"]
+    "ingredients": ["Milk", "Cream", "Vanilla", "Sugar"],
+    "views": 0
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "img": "https://avatars.mds.yandex.net/i?id=f8a0070b0e4fd57abcc33148d27e89a21f0515a8-16494489-images-thumbs&n=13",
     "price": 25,
     "category": "sauces",
-    "ingredients": ["Potatoes", "Vegetable oil", "Salt", "Ketchup (optional)"]
+    "ingredients": ["Potatoes", "Vegetable oil", "Salt", "Ketchup (optional)"],
+    "views": 0
   },
   {
     "id": 10,
@@ -77,6 +86,7 @@
     "img": "https://avatars.mds.yandex.net/i?id=6f49ee3639ab8dbc3932a21c12966eb4e862a21f-5557812-images-thumbs&n=13",
     "price": 25,
     "category": "fish",
-    "ingredients": ["Whole fish", "Lemon", "Olive oil", "Garlic", "Parsley"]
+    "ingredients": ["Whole fish", "Lemon", "Olive oil", "Garlic", "Parsley"],
+    "views": 0
   }
 ]

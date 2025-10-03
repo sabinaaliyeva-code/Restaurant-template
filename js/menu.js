@@ -46,7 +46,7 @@ function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn,
           <div class="img-border"></div>
         </div>
         <div class="card-info">
-          <span class="views">${currentViews} views</span>
+          <span class="views">${currentViews}views</span>
         </div>
       `;
 
