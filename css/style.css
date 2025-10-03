@@ -709,7 +709,7 @@ h2 {
 .services, 
 .about-section, 
 .chefs, 
-.page, 
+.slider-page, 
 .faq-section {
   opacity: 0;
   transform: translateY(30px);
