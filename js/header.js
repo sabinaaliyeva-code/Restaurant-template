@@ -54,10 +54,11 @@ function initNav() {
   let path = window.location.pathname;
 
   
-  if (path === "/" || path === "" || path.endsWith("/index.html")) {
+  path = path.split("/").pop();
+
+  
+  if (path === "" || path === "/") {
     path = "index.html";
-  } else {
-    path = path.split("/").pop(); 
   }
 
   
@@ -67,6 +68,9 @@ function initNav() {
       link.classList.add("active");
     }
   });
+
+  
+  console.log("Current path:", window.location.pathname, "=> checking against:", path);
 }
 
 
