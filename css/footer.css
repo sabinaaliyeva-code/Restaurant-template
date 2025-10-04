@@ -141,14 +141,15 @@ footer {
   }
 
   .footer-bottom {
-    font-size: 12px;   
+    font-size: 10px;   
     margin-top: 20px;
     gap: 5px;
   }
 
   .footer-legal {
-    font-size: 12px;
+    font-size: 14px;
     padding: 5px 0;
   }
+
 }
 

@@ -42,7 +42,7 @@ body{
 }
 p{
     line-height: 1.6;
-    color: #ccc;
+    color:gray;
     font-size: 20px;
     font-weight: 100;
 }
@@ -267,11 +267,15 @@ p{
     }
     .form-row input,textarea
     {
-    width: 100%;             
-    padding: 10px;
-    font-size: 14px;
+        width: 100%;             
+        padding: 10px ;
+        font-size: 11px;
+    }
+    .form-row textarea{
+         height: 100px;
+    }
     
-   }
+   
    .map iframe{
       height: 300px;
     }
@@ -283,13 +287,13 @@ p{
     }
     .branchs img{
         object-fit: cover;
-        height: 200px;
+        height: 240px;
     }
     .branchs h3,.branch-info a{
         font-size: 20px;
     }
     .contact-photo img,.contact-photo{
-        height: 200px;
+        height: 100px;
     }
 
    

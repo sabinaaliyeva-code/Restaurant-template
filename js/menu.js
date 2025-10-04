@@ -6,7 +6,7 @@ fetch("./footer.html")
   .then(res => res.text())
   .then(data => document.querySelector("footer").innerHTML = data);
 
-function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn, nextBtn, cardsPerPage = 8) {
+function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn, nextBtn, cardsPerPage = 16) {
   let currentPage = 1;
   let products = [];
   let filteredProducts = [];
@@ -210,6 +210,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("page-buttons"),
     document.getElementById("prev-btn"),
     document.getElementById("next-btn"),
-    8
+    16
   );
 });

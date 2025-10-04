@@ -48,15 +48,21 @@ function initNav() {
 
   hamburger.addEventListener('click', () => nav.classList.toggle('show'));
 
-   const links = document.querySelectorAll(".nav-links a");
-    const currentUrl = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".nav-links a");
+  let currentUrl = window.location.pathname.split("/").pop();
 
-    links.forEach(link => {
-       if(link.getAttribute("href") === currentUrl){
-           link.classList.add("active");
+  if (currentUrl === "" || currentUrl === "/") {
+    currentUrl = "index"; // əsas səhifə
+  } else {
+    currentUrl = currentUrl.replace(".html", "");
+  }
+
+  links.forEach(link => {
+    let hrefPage = link.getAttribute("href").replace(".html", "");
+    if (hrefPage === currentUrl) {
+      link.classList.add("active");
     }
-    });
-  
+  });
 }
 
 

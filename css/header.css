@@ -38,54 +38,54 @@ header {
 .nav-links {
   display: flex;
   margin-left: auto;
+  gap: 20px;
   font-size: 24px;
   font-weight: 500;
-  font-family:'Times New Roman', Times, serif;
-  gap: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
+/* Linklərin əsas stili */
 .nav-links a {
-  text-decoration: none;
-  color: darkolivegreen;
-  transition: 0.3s;
-  border-bottom: none;
-  background: none;
   position: relative;
   display: inline-block;
-  padding-bottom: 5px;
   margin: 30px;
-  
+  padding-bottom: 5px;
+  color: darkolivegreen;
+  text-decoration: none;
+  background: none;
+  transition: color 0.3s ease;
 }
+
 
 .nav-links a.active::after {
   content: "";
   position: absolute;
-  left: 0;           
-  bottom: 0;         
-  width: 100%;        
-  height: 2px;       
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
   background-color: darkolivegreen;
-  
 }
 
-.nav-links  a::after {
+.nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0;         
-  height: 1px;        
-  transition: width 0.3s ease; 
- 
+  width: 0;
+  height: 2px;
+  background-color:wheat;
+  transition: width 0.3s ease;
 }
 
-.nav-links  a:hover::after{
-  width: 100%;  
-  border-bottom: 1px solid black;
+.nav-links a:hover {
+  color:wheat;
 }
-.nav-links a:hover{
-  color: black;
+
+.nav-links a:hover::after {
+  width: 100%;
 }
+
 
 
 .nav-links.show {
@@ -200,7 +200,7 @@ header {
      
   }
   .nav-links a{
-    font-size: 14px;
+    font-size: 20px;
     padding: 0;
     
   }
@@ -209,24 +209,24 @@ header {
     gap: 5px;
   }
   .logo img{
-    height: 80px;
+    height: 100px;
   }
   .reservation{
     display: none;
   }
   .cart{
     padding: 0;
-    font-size: 10px;
+    font-size: 14px;
     
   }
   #cart-count {
   top: -8px;
   right: -8px;
-  padding:0 4px;
+  padding:4px 8px;
   font-size: 14px;
  }
  .cart .bi-cart-fill {
-  font-size: 20px;
+  font-size: 30px;
   color:orange;
 }
 }

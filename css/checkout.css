@@ -205,19 +205,19 @@ h1 {
     font-size: 16px;
   }
   .cart-item h3{
-    font-size: 11px;
+    font-size: 14px;
   }
   .cart-items p,.item-total p{
-    font-size: 11px;
+    font-size: 14px;
   }
   .cart-summary h3{
-    font-size: 11px;
+    font-size: 14px;
   }
   .item-total,.remove-btn{
-    font-size: 11px;
+    font-size: 14px;
   }
   .cart-summary {
-    font-size: 11px;
+    font-size: 14px;
     text-align: left;
   }
    .container {
@@ -237,9 +237,9 @@ h1 {
     font-size: 16px;
   }
   .pay-btn{
-    font-size: 12px;
+    font-size: 14px;
   }
   .checkout-form label{
-    font-size: 11px;
+    font-size: 14px;
   }
 }

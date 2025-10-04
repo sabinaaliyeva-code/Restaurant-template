@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
           const sections = document.querySelectorAll(
-    ".services, .about-section, .chefs, .slider-page, .faq-section"
+    ".services,.card, .about-section,.about-text,.about-img, .chefs,.chef-card, .slider-page, .faq-section"
   );
 
   const observer = new IntersectionObserver(entries => {

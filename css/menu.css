@@ -281,7 +281,7 @@ body {
 }
 @media (max-width: 780px){
   .dropbtn{
-    font-size: 11px;
+    font-size: 14px;
     padding: 5px;
   }
   
@@ -319,9 +319,12 @@ body {
   }
   .dropbtn,
   .all {
-  width: 300px;
+  width: 200px;
   }
   .slider-left {
+  display: none;
+}
+.img-overlay{
   display: none;
 }
   

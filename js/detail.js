@@ -79,7 +79,3 @@ addCartBtn.addEventListener("click", () => {
  }
 
  
-
-
-
- 
