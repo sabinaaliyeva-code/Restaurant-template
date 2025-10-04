@@ -39,39 +39,33 @@ function updateCartCounter() {
   }
 }
 
-
 function initNav() {
   const nav = document.querySelector('nav');
   const hamburger = document.querySelector('.hamburger');
   if (!nav || !hamburger) return;
 
-  
   hamburger.addEventListener('click', () => nav.classList.toggle('show'));
 
   const links = document.querySelectorAll(".nav-links a");
 
   
-  let path = window.location.pathname;
+  let path = window.location.pathname.split("/").pop();
 
   
-  path = path.split("/").pop();
-
-  
-  if (path === "" || path === "/") {
+  if (!path || path === "/") {
     path = "index.html";
   }
 
-  
+
   links.forEach(link => {
-    let href = link.getAttribute("href");
+    const href = link.getAttribute("href");
+
     if (href === path) {
       link.classList.add("active");
     }
   });
-
-  
-  console.log("Current path:", window.location.pathname, "=> checking against:", path);
 }
+
 
 
 
