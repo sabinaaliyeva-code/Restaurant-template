@@ -45,6 +45,7 @@ function initNav() {
   const hamburger = document.querySelector('.hamburger');
   if (!nav || !hamburger) return;
 
+  
   hamburger.addEventListener('click', () => nav.classList.toggle('show'));
 
   const links = document.querySelectorAll(".nav-links a");
@@ -53,13 +54,16 @@ function initNav() {
   let path = window.location.pathname;
 
   
-  if (path === "/" || path === "") path = "/index.html";
+  if (path === "/" || path === "" || path.endsWith("/index.html")) {
+    path = "index.html";
+  } else {
+    path = path.split("/").pop(); 
+  }
 
+  
   links.forEach(link => {
     let href = link.getAttribute("href");
-
-    
-    if (href === path || href === path.replace(".html","") || href === path.split("/").pop()) {
+    if (href === path) {
       link.classList.add("active");
     }
   });
