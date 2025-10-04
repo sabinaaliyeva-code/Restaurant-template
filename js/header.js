@@ -1,22 +1,26 @@
+
 fetch("./footer.html")
-        .then(res => res.text())
-        .then(data => {
-            const footerElement = document.querySelector("footer");
-            if (footerElement) {
-                footerElement.innerHTML = data;
-            }
-});
+  .then(res => res.text())
+  .then(data => {
+    const footerElement = document.querySelector("footer");
+    if (footerElement) {
+      footerElement.innerHTML = data;
+    }
+  });
+
 
 function initHeader() {
   fetch("./header.html")
     .then(res => res.text())
     .then(data => {
-      document.querySelector("header").outerHTML = data;
-
-      initNav();
-      initReservation();
+      const headerElement = document.querySelector("header");
+      if (headerElement) {
+        headerElement.outerHTML = data;
+      }
 
       
+      initNav();
+      initReservation();
       updateCartCounter();
 
       if (typeof updateCartInfo === "function") {
@@ -25,20 +29,15 @@ function initHeader() {
     });
 }
 
+
 function updateCartCounter() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  
-  
   const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-
   const itemCount = document.getElementById("cart-count");
   if (itemCount) {
     itemCount.textContent = totalCount;
   }
 }
-
-
-
 
 
 function initNav() {
@@ -49,21 +48,24 @@ function initNav() {
   hamburger.addEventListener('click', () => nav.classList.toggle('show'));
 
   const links = document.querySelectorAll(".nav-links a");
-  let currentUrl = window.location.pathname.split("/").pop();
 
-  if (currentUrl === "" || currentUrl === "/") {
-    currentUrl = "index"; // əsas səhifə
-  } else {
-    currentUrl = currentUrl.replace(".html", "");
-  }
+  
+  let path = window.location.pathname;
+
+  
+  if (path === "/" || path === "") path = "/index.html";
 
   links.forEach(link => {
-    let hrefPage = link.getAttribute("href").replace(".html", "");
-    if (hrefPage === currentUrl) {
+    let href = link.getAttribute("href");
+
+    
+    if (href === path || href === path.replace(".html","") || href === path.split("/").pop()) {
       link.classList.add("active");
     }
   });
 }
+
+
 
 
 function initReservation() {
@@ -103,7 +105,6 @@ function initReservation() {
     </div>
   `;
 
-  
   document.body.insertAdjacentHTML("beforeend", popupHTML);
 
   const reserveBtn = document.getElementById("reserve-btn");
@@ -115,8 +116,8 @@ function initReservation() {
 
   reserveBtn.addEventListener("click", () => popup.style.display = "flex");
   closeBtn.addEventListener("click", () => popup.style.display = "none");
-  window.addEventListener("click", e => { 
-    if (e.target === popup) popup.style.display = "none"; 
+  window.addEventListener("click", e => {
+    if (e.target === popup) popup.style.display = "none";
   });
 
   form.addEventListener("submit", e => {
@@ -128,5 +129,4 @@ function initReservation() {
 }
 
 
-document.addEventListener("DOMContentLoaded", initReservation);
 document.addEventListener("DOMContentLoaded", initHeader);

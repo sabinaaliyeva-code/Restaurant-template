@@ -65,6 +65,7 @@ p{
   border: none;
   min-width: 150px;
   border-radius: 8px;
+  width: 200px;
 }
 .cart-summary{
   margin: 20px;

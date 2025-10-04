@@ -88,5 +88,205 @@
     "category": "fish",
     "ingredients": ["Whole fish", "Lemon", "Olive oil", "Garlic", "Parsley"],
     "views": 0
+  },
+  {
+    "id": 11,
+    "title": "Caesar Salad",
+    "img": "https://avatars.mds.yandex.net/i?id=fa14f4e8a4f8b1b65ed56be28757af0f44aa8c77-12602673-images-thumbs&n=13",
+    "price": 12,
+    "category": "salad",
+    "ingredients": ["Romaine lettuce", "Croutons", "Parmesan", "Caesar dressing"],
+    "views": 0
+  },
+  {
+    "id": 12,
+    "title": "Greek Salad",
+    "img": "https://avatars.mds.yandex.net/i?id=7b4f9d4de64bea256af173b6f891f1b6d0d3d8a6-3690429-images-thumbs&n=13",
+    "price": 10,
+    "category": "salad",
+    "ingredients": ["Tomato", "Cucumber", "Feta", "Olives", "Onion"],
+    "views": 0
+  },
+  {
+    "id": 13,
+    "title": "Tuna Salad",
+    "img": "https://avatars.mds.yandex.net/i?id=0292315c85338b78aa1caf6eb2f911ff8645b108-16344332-images-thumbs&n=13",
+    "price": 11,
+    "category": "salad",
+    "ingredients": ["Tuna", "Mayo", "Celery", "Onion"],
+    "views": 0
+  },
+  {
+    "id": 14,
+    "title": "Chicken Salad",
+    "img": "https://avatars.mds.yandex.net/i?id=83f27346f10d819f99a001c751edb14492071ce4-10233129-images-thumbs&n=13",
+    "price": 13,
+    "category": "salad",
+    "ingredients": ["Chicken breast", "Celery", "Mayo", "Grapes"],
+    "views": 0
+  },
+  {
+    "id": 15,
+    "title": "Chocolate Cake",
+    "img": "https://i.pinimg.com/474x/4a/db/f4/4adbf44818b5f469b5a3988f96ee9a63.jpg",
+    "price": 7,
+    "category": "dessert",
+    "ingredients": ["Flour", "Cocoa", "Sugar", "Butter"],
+    "views": 0
+  },
+  {
+    "id": 16,
+    "title": "Cheesecake",
+    "img": "https://avatars.mds.yandex.net/i?id=382d2d9da4d1fa0f03ecfa52106bc808226a1d08-4264410-images-thumbs&n=13",
+    "price": 8,
+    "category": "dessert",
+    "ingredients": ["Cream cheese", "Sugar", "Eggs", "Graham crackers"],
+    "views": 0
+  },
+  {
+    "id": 17,
+    "title": "Ice Cream Sundae",
+    "img": "https://avatars.mds.yandex.net/i?id=9cace495b28839cae4f52fad9d6bb76c35d95842-16113619-images-thumbs&n=13",
+    "price": 6,
+    "category": "dessert",
+    "ingredients": ["Ice cream", "Chocolate syrup", "Whipped cream", "Cherry"],
+    "views": 0
+  },
+  {
+    "id": 18,
+    "title": "Fruit Tart",
+    "img": "https://i.pinimg.com/736x/09/80/a9/0980a9884e9b52e578f284dbe8dc2723.jpg",
+    "price": 9,
+    "category": "dessert",
+    "ingredients": ["Pastry crust", "Custard", "Strawberries", "Kiwi", "Blueberries"],
+    "views": 0
+  },
+  {
+    "id": 19,
+    "title": "Grilled Steak",
+    "img": "https://avatars.mds.yandex.net/i?id=c1cdca7aeb465e71fd47deb728b38e9e37a846c8-13033711-images-thumbs&n=13",
+    "price": 25,
+    "category": "meat",
+    "ingredients": ["Beef steak", "Salt", "Pepper", "Olive oil"],
+    "views": 0
+  },
+  {
+    "id": 20,
+    "title": "BBQ Ribs",
+    "img": "https://avatars.mds.yandex.net/i?id=25916af80ef64141eb32eabb8a6026ff698f0931-5233315-images-thumbs&n=13",
+    "price": 22,
+    "category": "meat",
+    "ingredients": ["Pork ribs", "BBQ sauce", "Garlic", "Spices"],
+    "views": 0
+  },
+  {
+    "id": 21,
+    "title": "Beef Burger",
+    "img": "https://avatars.mds.yandex.net/i?id=e400363de6fc9f20441a071160faea4798e06fa2-5216285-images-thumbs&n=13",
+    "price": 15,
+    "category": "meat",
+    "ingredients": ["Beef patty", "Cheddar", "Lettuce", "Tomato", "Bun"],
+    "views": 0
+  },
+  {
+    "id": 22,
+    "title": "Roast Chicken",
+    "img": "https://avatars.mds.yandex.net/i?id=9a497a422367c14e4c048e921f526a8d_l-11801521-images-thumbs&n=13",
+    "price": 18,
+    "category": "meat",
+    "ingredients": ["Chicken", "Garlic", "Rosemary", "Olive oil"],
+    "views": 0
+  },
+  {
+    "id": 23,
+    "title": "Coca-Cola",
+    "img": "https://avatars.mds.yandex.net/i?id=3ecc8a49bb0806ff24ec74045ff6f90ab098f7b2-5220716-images-thumbs&n=13",
+    "price": 3,
+    "category": "drinks",
+    "ingredients": ["Carbonated water", "Sugar", "Flavorings"],
+    "views": 0
+  },
+  {
+    "id": 24,
+    "title": "Fresh Orange Juice",
+    "img": "https://avatars.mds.yandex.net/i?id=e418d1359d5bba169552919895430bc57b16591d-12753081-images-thumbs&n=13",
+    "price": 4,
+    "category": "drinks",
+    "ingredients": ["Fresh oranges"],
+    "views": 0
+  },
+  {
+    "id": 25,
+    "title": "Lemonade",
+    "img": "https://avatars.mds.yandex.net/i?id=78a2caa438b2e8e7fd4526011a6f00bcf4f50b17-16302628-images-thumbs&n=13",
+    "price": 4,
+    "category": "drinks",
+    "ingredients": ["Lemon", "Sugar", "Water"],
+    "views": 0
+  },
+  {
+    "id": 26,
+    "title": "Iced Tea",
+    "img": "https://avatars.mds.yandex.net/i?id=793862b093394ecac911033ac1948ca9ff78fe79-5234560-images-thumbs&n=13",
+    "price": 4,
+    "category": "drinks",
+    "ingredients": ["Tea", "Ice", "Lemon"],
+    "views": 0
+  },
+  {
+    "id": 27,
+    "title": "Vanilla Milkshake",
+    "img": "https://avatars.mds.yandex.net/i?id=58de49f8ac15b66c31642d87a106dafce698a039-5343659-images-thumbs&n=13",
+    "price": 6,
+    "category": "drinks",
+    "ingredients": ["Vanilla ice cream", "Milk", "Sugar"],
+    "views": 0
+  },
+  {
+    "id": 28,
+    "title": "Chocolate Milkshake",
+    "img": "https://avatars.mds.yandex.net/i?id=7e2c373374e314a35c5a42991d4fa6978c08c7d3-5239483-images-thumbs&n=13",
+    "price": 6,
+    "category": "drinks",
+    "ingredients": ["Chocolate ice cream", "Milk", "Cocoa"],
+    "views": 0
+  },
+  {
+    "id": 29,
+    "title": "Espresso",
+    "img": "https://avatars.mds.yandex.net/i?id=f7754ab3cea5e526db116bb6a43e4310404cbc8b-5887129-images-thumbs&n=13",
+    "price": 3,
+    "category": "coffee",
+    "ingredients": ["Ground coffee", "Water"],
+    "views": 0
+  },
+  {
+    "id": 30,
+    "title": "Cappuccino",
+    "img": "https://avatars.mds.yandex.net/i?id=32c751d7270fa362e38f20263cb7429fe691746f-5883346-images-thumbs&n=13",
+    "price": 5,
+    "category": "coffee",
+    "ingredients": ["Espresso", "Milk foam", "Steamed milk"],
+    "views": 0
+  },
+  {
+    "id": 31,
+    "title": "Latte",
+    "img": "https://avatars.mds.yandex.net/i?id=73bb0f3d9d9235aba53336e331c1310466bf5638-16110459-images-thumbs&n=13",
+    "price": 5,
+    "category": "coffee",
+    "ingredients": ["Espresso", "Steamed milk", "Milk foam"],
+    "views": 0
+  },
+  {
+    "id": 32,
+    "title": "Iced Coffee",
+    "img": "https://avatars.mds.yandex.net/i?id=66eebe98cf51a84aceb4170ee7abd8f9d17a9cb8-12626523-images-thumbs&n=13",
+    "price": 4,
+    "category": "coffee",
+    "ingredients": ["Coffee", "Ice", "Sugar"],
+    "views": 0
   }
 ]
+
+

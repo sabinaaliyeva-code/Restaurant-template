@@ -93,11 +93,11 @@ header {
 }
 
 
-.cart {
+.cart{
   
   position: relative;
 }
-#cart-count {
+#cart-count{
   background: red;
   color: white;
   font-size: 14px;
@@ -107,7 +107,7 @@ header {
   top: 8px;
   right: 16px;
 }
-.cart .bi-cart-fill {
+.cart .bi-cart-fill{
   font-size: 26px;
   color:orange;
 }
