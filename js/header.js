@@ -48,27 +48,20 @@ function initNav() {
 
   const links = document.querySelectorAll(".nav-links a");
 
-  
-  let path = window.location.pathname.split("/").pop();
+  let path = window.location.pathname;
 
   
-  if (!path || path === "/") {
-    path = "index.html";
-  }
-
+  if (path === "/" || path === "") path = "/index.html";
 
   links.forEach(link => {
     const href = link.getAttribute("href");
 
-    if (href === path) {
+    
+    if (href === path.split("/").pop()) {
       link.classList.add("active");
     }
   });
 }
-
-
-
-
 
 function initReservation() {
   const popupHTML = `
