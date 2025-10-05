@@ -129,10 +129,14 @@ p{
   .cart-item p{
     font-size: 14px;
   }
+  .cart-item img{
+    width: 60%;
+  }
   
   .cart-item button {
     padding: 4px 6px;
     font-size: 12px;
+    margin: 5px;
   }
   #buy-now-cart {
     font-size: 14px;
@@ -141,15 +145,17 @@ p{
   }
   .cart-item {
   display: flex;
+  padding: 30px;
   flex-direction: column;
   
   }
   .cart-area{
     display: flex;
     flex-direction: row;
+    padding: 10px 30px ;
   }
   .cart-area h2{
-    font-size: 14px;
+    font-size: 20px;
   }
   .cart-area .bi-cart{
     font-size: 20px;

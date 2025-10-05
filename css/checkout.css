@@ -194,6 +194,7 @@ h1 {
 
 @media (max-width: 480px) {
   .cart-item {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -210,6 +211,10 @@ h1 {
   .cart-items p,.item-total p{
     font-size: 14px;
   }
+  .cart-item img{
+    width: 70%;
+    height: auto;
+  }
   .cart-summary h3{
     font-size: 14px;
   }
@@ -225,14 +230,7 @@ h1 {
     padding: 15px;
   }
 
-  .cart-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .cart-summary {
-    text-align: left;
-  }
+ 
   .checkout-form h2{
     font-size: 16px;
   }

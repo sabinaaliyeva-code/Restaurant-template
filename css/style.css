@@ -225,6 +225,7 @@ h2 {
   justify-content: center;
   align-items:end;
   position: relative;
+
   
   
   
@@ -248,7 +249,6 @@ h2 {
   left: 50%;       
   transform: translate(-50%, -50%);
   padding: 12px 24px;
-  background-color: rgba(0, 0, 0, 0.3); 
   color:white;
   border: none;
   font-size: 18px;
@@ -259,9 +259,7 @@ h2 {
   animation: colorChange 1s infinite alternate;
 }
 
-.reservation-btn:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
+
 @keyframes colorChange {
   0% {
     background: orange;
@@ -742,7 +740,7 @@ h2 {
      }
      .about-section{
       flex-wrap: wrap;
-      padding: 30px;
+      
      }
      .about-text p{
       font-size: 24px;
@@ -760,6 +758,10 @@ h2 {
      }
      .chef-card{
       width: 500px;
+     }
+     .reservation-btn{
+      padding: 16px;
+      font-size: 20px;
      }
      
 }
@@ -802,7 +804,7 @@ h2 {
     }
      .about-section {
     flex-direction: column;  
-    padding: 15px 10px;      
+    padding: 50px 10px;      
     gap: 10px;
     max-width: 320px;         
     margin: 0 auto;          
@@ -810,7 +812,6 @@ h2 {
 
   .about-text {
     width: 100%;
-    margin-bottom: 20px;
   }
 
   .about-text h2 {
@@ -839,12 +840,15 @@ h2 {
     margin: 0 auto;
   }
   .reservation-btn{
-    padding: 10px;
-    font-size: 14px;
-    top:-30px;        
-    left: 50%; 
-    margin: 10px 0;      
+    padding:8px;
+    width: 100%;
+    font-size: 14px; 
+    top: 220px;      
+    left: 50%;  
+    margin: 10px 0;
   }
+  
+  
     .chefs-section {
     flex-direction: column;
     gap: 25px;
@@ -858,6 +862,9 @@ h2 {
   .chef-card {
     width: 100%;   
     max-width: 320px; 
+  }
+  .chef-card img{
+    height: 300px;
   }
 
   
