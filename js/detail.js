@@ -9,13 +9,13 @@ const buyNowBtn = document.getElementById("buy-now");
 let currentProduct = null;
 
 
-window.increaseQty = function () {
+window.detailIncreaseQty = function () {
   quantity++;
   qtyDisplay.textContent = quantity;
 };
 
 
-window.decreaseQty = function () {
+window.detailDecreaseQty = function () {
   if (quantity > 1) {
     quantity--;
     qtyDisplay.textContent = quantity;

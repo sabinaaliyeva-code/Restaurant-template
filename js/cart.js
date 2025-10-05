@@ -10,13 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || []; 
 
   function renderCart() {
+   
     if (!container) return;
 
     container.innerHTML = "";
 
     if (cart.length === 0) {
       container.innerHTML = "<p>Cart is empty. 🛒</p>";
-      if (buyNowCartBtn) buyNowCartBtn.style.display = "none"; 
+      if (buyNowCartBtn) buyNowCartBtn.style.display = "none";
+      updateCartCounter();
       return;
     }
 
@@ -62,7 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Total amount: $${totalPrice.toFixed(2)}</h3>
     `;
     container.appendChild(summary);
-  }
+    
+    updateCartCounter();
+    } 
 
   
   window.removeFromCart = function(index) {
@@ -96,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "checkout.html";
     });
   }
+  
 
   renderCart();
 });

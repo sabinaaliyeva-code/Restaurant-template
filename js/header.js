@@ -25,7 +25,8 @@ function initHeader() {
 
       if (typeof updateCartInfo === "function") {
         updateCartInfo();
-      }
+      } 
+      
     });
 }
 
@@ -36,8 +37,13 @@ function updateCartCounter() {
   const itemCount = document.getElementById("cart-count");
   if (itemCount) {
     itemCount.textContent = totalCount;
+    
   }
+  
+  
+  
 }
+
 
 function initNav() {
   const nav = document.querySelector('nav');
