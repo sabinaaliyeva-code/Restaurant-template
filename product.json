@@ -13,7 +13,7 @@
     "title": "Cheeseburger",
     "img": "https://avatars.mds.yandex.net/i?id=b964d815ddc3607185ba9364f4c9b9719dedfa7a-8240464-images-thumbs&n=13",
     "price": 25,
-    "category": "meat",
+    "category": "burger",
     "ingredients": ["Beef patty", "Cheddar cheese", "Lettuce", "Tomato", "Bun"],
     "views": 0
   },
@@ -49,7 +49,7 @@
     "title": "Tiramisu",
     "img": "https://avatars.mds.yandex.net/i?id=40aa10bd06efcc73f4fd30854855f4b6a27f6e9f-5213158-images-thumbs&n=13",
     "price": 25,
-    "category": "dessert",
+    "category": "tiramisu",
     "ingredients": ["Mascarpone", "Coffee", "Ladyfingers", "Cocoa powder", "Sugar"],
     "views": 0
   },
@@ -67,7 +67,7 @@
     "title": "Vanilla Ice Cream",
     "img": "https://avatars.mds.yandex.net/i?id=bfbce18f58dd6cc44f338c75dde37099c4a7c019-9154408-images-thumbs&n=13",
     "price": 25,
-    "category": "dessert",
+    "category": "ice cream",
     "ingredients": ["Milk", "Cream", "Vanilla", "Sugar"],
     "views": 0
   },
@@ -76,7 +76,7 @@
     "title": "French Fries",
     "img": "https://avatars.mds.yandex.net/i?id=f8a0070b0e4fd57abcc33148d27e89a21f0515a8-16494489-images-thumbs&n=13",
     "price": 25,
-    "category": "sauces",
+    "category": "potato",
     "ingredients": ["Potatoes", "Vegetable oil", "Salt", "Ketchup (optional)"],
     "views": 0
   },
@@ -94,7 +94,7 @@
     "title": "Caesar Salad",
     "img": "https://avatars.mds.yandex.net/i?id=fa14f4e8a4f8b1b65ed56be28757af0f44aa8c77-12602673-images-thumbs&n=13",
     "price": 12,
-    "category": "salad",
+    "category": "mixed-salad",
     "ingredients": ["Romaine lettuce", "Croutons", "Parmesan", "Caesar dressing"],
     "views": 0
   },
@@ -103,7 +103,7 @@
     "title": "Greek Salad",
     "img": "https://avatars.mds.yandex.net/i?id=7b4f9d4de64bea256af173b6f891f1b6d0d3d8a6-3690429-images-thumbs&n=13",
     "price": 10,
-    "category": "salad",
+    "category": "vegetable-salad",
     "ingredients": ["Tomato", "Cucumber", "Feta", "Olives", "Onion"],
     "views": 0
   },
@@ -112,7 +112,7 @@
     "title": "Tuna Salad",
     "img": "https://avatars.mds.yandex.net/i?id=0292315c85338b78aa1caf6eb2f911ff8645b108-16344332-images-thumbs&n=13",
     "price": 11,
-    "category": "salad",
+    "category": "fish-salad",
     "ingredients": ["Tuna", "Mayo", "Celery", "Onion"],
     "views": 0
   },
@@ -121,7 +121,7 @@
     "title": "Chicken Salad",
     "img": "https://avatars.mds.yandex.net/i?id=83f27346f10d819f99a001c751edb14492071ce4-10233129-images-thumbs&n=13",
     "price": 13,
-    "category": "salad",
+    "category": "chicken-salad",
     "ingredients": ["Chicken breast", "Celery", "Mayo", "Grapes"],
     "views": 0
   },
@@ -130,7 +130,7 @@
     "title": "Chocolate Cake",
     "img": "https://i.pinimg.com/474x/4a/db/f4/4adbf44818b5f469b5a3988f96ee9a63.jpg",
     "price": 7,
-    "category": "dessert",
+    "category": "keks",
     "ingredients": ["Flour", "Cocoa", "Sugar", "Butter"],
     "views": 0
   },
@@ -139,7 +139,7 @@
     "title": "Cheesecake",
     "img": "https://avatars.mds.yandex.net/i?id=382d2d9da4d1fa0f03ecfa52106bc808226a1d08-4264410-images-thumbs&n=13",
     "price": 8,
-    "category": "dessert",
+    "category": "keks",
     "ingredients": ["Cream cheese", "Sugar", "Eggs", "Graham crackers"],
     "views": 0
   },
@@ -148,7 +148,7 @@
     "title": "Ice Cream Sundae",
     "img": "https://avatars.mds.yandex.net/i?id=9cace495b28839cae4f52fad9d6bb76c35d95842-16113619-images-thumbs&n=13",
     "price": 6,
-    "category": "dessert",
+    "category": "ice cream",
     "ingredients": ["Ice cream", "Chocolate syrup", "Whipped cream", "Cherry"],
     "views": 0
   },
@@ -157,7 +157,7 @@
     "title": "Fruit Tart",
     "img": "https://i.pinimg.com/736x/09/80/a9/0980a9884e9b52e578f284dbe8dc2723.jpg",
     "price": 9,
-    "category": "dessert",
+    "category": "keks",
     "ingredients": ["Pastry crust", "Custard", "Strawberries", "Kiwi", "Blueberries"],
     "views": 0
   },
@@ -184,7 +184,7 @@
     "title": "Beef Burger",
     "img": "https://avatars.mds.yandex.net/i?id=e400363de6fc9f20441a071160faea4798e06fa2-5216285-images-thumbs&n=13",
     "price": 15,
-    "category": "meat",
+    "category": "burger",
     "ingredients": ["Beef patty", "Cheddar", "Lettuce", "Tomato", "Bun"],
     "views": 0
   },
@@ -193,7 +193,7 @@
     "title": "Roast Chicken",
     "img": "https://avatars.mds.yandex.net/i?id=9a497a422367c14e4c048e921f526a8d_l-11801521-images-thumbs&n=13",
     "price": 18,
-    "category": "meat",
+    "category": "chicken",
     "ingredients": ["Chicken", "Garlic", "Rosemary", "Olive oil"],
     "views": 0
   },
@@ -202,7 +202,7 @@
     "title": "Coca-Cola",
     "img": "https://avatars.mds.yandex.net/i?id=3ecc8a49bb0806ff24ec74045ff6f90ab098f7b2-5220716-images-thumbs&n=13",
     "price": 3,
-    "category": "drinks",
+    "category": "sparkling drinks",
     "ingredients": ["Carbonated water", "Sugar", "Flavorings"],
     "views": 0
   },
@@ -211,7 +211,7 @@
     "title": "Fresh Orange Juice",
     "img": "https://avatars.mds.yandex.net/i?id=e418d1359d5bba169552919895430bc57b16591d-12753081-images-thumbs&n=13",
     "price": 4,
-    "category": "drinks",
+    "category": "fruit juice",
     "ingredients": ["Fresh oranges"],
     "views": 0
   },
@@ -220,7 +220,7 @@
     "title": "Lemonade",
     "img": "https://avatars.mds.yandex.net/i?id=78a2caa438b2e8e7fd4526011a6f00bcf4f50b17-16302628-images-thumbs&n=13",
     "price": 4,
-    "category": "drinks",
+    "category": "fruit juice",
     "ingredients": ["Lemon", "Sugar", "Water"],
     "views": 0
   },
@@ -229,7 +229,7 @@
     "title": "Iced Tea",
     "img": "https://avatars.mds.yandex.net/i?id=793862b093394ecac911033ac1948ca9ff78fe79-5234560-images-thumbs&n=13",
     "price": 4,
-    "category": "drinks",
+    "category": "ice tea",
     "ingredients": ["Tea", "Ice", "Lemon"],
     "views": 0
   },
@@ -238,7 +238,7 @@
     "title": "Vanilla Milkshake",
     "img": "https://avatars.mds.yandex.net/i?id=58de49f8ac15b66c31642d87a106dafce698a039-5343659-images-thumbs&n=13",
     "price": 6,
-    "category": "drinks",
+    "category": "milk-shake",
     "ingredients": ["Vanilla ice cream", "Milk", "Sugar"],
     "views": 0
   },
@@ -247,7 +247,7 @@
     "title": "Chocolate Milkshake",
     "img": "https://avatars.mds.yandex.net/i?id=7e2c373374e314a35c5a42991d4fa6978c08c7d3-5239483-images-thumbs&n=13",
     "price": 6,
-    "category": "drinks",
+    "category": "milk-shake",
     "ingredients": ["Chocolate ice cream", "Milk", "Cocoa"],
     "views": 0
   },

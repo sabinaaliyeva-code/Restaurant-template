@@ -124,21 +124,11 @@ function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn,
       <div class="dropdown">
         <button class="dropbtn">Drinks ⬇</button>
         <div class="dropdown-content">
-          <button data-category="sparkling juice">Sparkling Juice</button>
+          <button data-category="sparkling drinks">Sparkling Juice</button>
           <button data-category="fruit juice">Fruit Juice</button>
-          <button data-category="ice-tea">Ice Tea</button>
-          <button data-category="coffe">Coffee</button>
+          <button data-category="ice tea">Ice Tea</button>
+          <button data-category="coffee">Coffee</button>
           <button data-category="milk-shake">Milk Shake</button>
-          <button data-category="buttermilk">Buttermilk</button>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">Sauces ⬇</button>
-        <div class="dropdown-content">
-          <button data-category="ketcup">Ketçup</button>
-          <button data-category="mayonez">Mayonez</button>
-          <button data-category="Steak Sauce">Steak Sauce</button>
         </div>
       </div>
 
@@ -148,7 +138,6 @@ function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn,
           <button data-category="pizza">Pizza</button>
           <button data-category="burger">Burger</button>
           <button data-category="potato">Potato</button>
-          <button data-category="tantuni">Tantuni</button>
         </div>
       </div>
 
@@ -158,17 +147,16 @@ function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn,
           <button data-category="keks">Keks</button>
           <button data-category="tiramisu">Tiramisu</button>
           <button data-category="ice cream">Ice Cream</button>
-          <button data-category="chocolate">Chocolate</button>
         </div>
       </div>
 
       <div class="dropdown">
         <button class="dropbtn">Salad ⬇</button>
         <div class="dropdown-content">
-          <button data-category="greek">Greek Salad</button>
-          <button data-category="caesar">Caesar Salad</button>
-          <button data-category="caprese">Caprese Salad</button>
-          <button data-category="garden">Garden Salad</button>
+          <button data-category="fish-salad">Fish Salad</button>
+          <button data-category="chicken-salad">Chicken  Salad</button>
+          <button data-category="vegetable-salad">Vegetable Salad</button>
+          <button data-category="mixed-salad">Mixed Salad</button>
         </div>
       </div>
     `;
