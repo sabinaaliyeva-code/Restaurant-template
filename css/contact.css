@@ -26,14 +26,12 @@ body{
     margin-bottom: 40px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     object-fit: cover;
-    
+    padding-top: 120px;
     background-repeat: no-repeat;
     
 }
 .contact-photo img {
-    
     position: fixed; 
-   
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -51,7 +49,8 @@ p{
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     padding: 20px;
-    background-color:white;
+    background-color: white;
+    margin-top: 80px;
 }
 
 .left-side{
@@ -59,10 +58,10 @@ p{
     flex-direction: column;
     gap: 30px;
     box-sizing: border-box; 
+    padding: 10px 40px;
 }
 .left-side h3{
     color: darkolivegreen;
-    padding-bottom: 20px;
     font-size: 30px;
     font-weight: 100;
 }
@@ -183,14 +182,15 @@ p{
 .right-side{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    
+    padding:10px 30px;
+    align-items: center;
 }
 
 .branchs{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding:0 50px;
 }
 .branchs h3{
     color: darkolivegreen;
@@ -216,7 +216,6 @@ p{
     color: darkolivegreen;
     font-size: 24px;
     font-weight: 100;
-    margin-bottom: 20px;
 }
 .branch-info h3{
     font-size: 26px;
@@ -227,11 +226,21 @@ p{
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 340px;
     
 }
 
-
+@media(max-width: 1200px){
+    .branchs,.left-side ,.right-side{
+        padding:0 10px;
+        
+    }
+    .branchs img{
+        height: 280px;
+        object-fit: cover;
+        display:flex;
+    }
+}
 
 
 
@@ -252,18 +261,22 @@ p{
         display: flex;
         flex-direction: column;
     }
+    .contact-photo{
+        padding-top: 100px;
+        margin-top: 0;
+    }
 }
 
 
 @media (max-width: 480px){
     .left-side h3{
-        font-size: 20px;
+        font-size: 16px;
     }
     .left-side p,.branch-info p{
         font-size: 14px;
     }
     .branchs .branch-info h4{
-        font-size: 18px;
+        font-size: 14px;
     }
     .form-row input,textarea
     {
@@ -272,7 +285,7 @@ p{
         font-size: 11px;
     }
     .form-row textarea{
-         height: 100px;
+        height: 100px;
     }
     
    
@@ -287,7 +300,7 @@ p{
     }
     .branchs img{
         object-fit: cover;
-        height: 240px;
+        height: 200px;
     }
     .branchs h3,.branch-info a{
         font-size: 20px;
@@ -295,6 +308,12 @@ p{
     .contact-photo img,.contact-photo{
         height: 200px;
         object-fit: cover;
+    }
+    .contact-photo{
+        padding-top: 62px;
+    }
+    .left-side, .right-side{
+        padding: 0 10px;
     }
 
    

@@ -17,6 +17,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: gainsboro;
   display: grid;
+ 
   
 }
 
@@ -27,7 +28,7 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
-  
+  padding-top: 120px;
 }
 
 h1 {
@@ -56,6 +57,7 @@ h1 {
   scroll-behavior: smooth;
   scrollbar-width: thin;     
   scrollbar-color: darkolivegreen #f1f1f1;
+ 
 }
 .cart-items::-webkit-scrollbar {
   width: 8px;
@@ -190,6 +192,9 @@ h1 {
   .controls {
     align-items: flex-start;
   }
+  .container{
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -202,42 +207,48 @@ h1 {
   .controls {
     align-items: flex-start;
   }
+ 
   .container h1{
-    font-size: 16px;
+    font-size: 14px;
   }
   .cart-item h3{
-    font-size: 14px;
+    font-size: 12px;
   }
   .cart-items p,.item-total p{
-    font-size: 14px;
+    font-size: 12px;
   }
   .cart-item img{
     width: 70%;
     height: auto;
   }
   .cart-summary h3{
-    font-size: 14px;
+    font-size: 12px;
   }
   .item-total,.remove-btn{
-    font-size: 14px;
+    font-size: 12px;
   }
   .cart-summary {
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
   }
    .container {
-  
+    margin-top: 50px;
     padding: 15px;
+  }
+  .pay-btn{
+    font-size: 12px;
+    width: 100%;
   }
 
  
   .checkout-form h2{
-    font-size: 16px;
+    font-size: 12px;
   }
   .pay-btn{
-    font-size: 14px;
+    font-size: 12px;
   }
   .checkout-form label{
-    font-size: 14px;
+    font-size: 12px;
+    padding: 5px 0;
   }
 }

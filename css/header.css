@@ -1,18 +1,21 @@
 
-header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0,0,0,0.9);
-  padding: 15px 20px;
+  padding: 0 15px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  transition: top 0.3s;
 }
 
-.logo img {
-  height:150px;  
-   height: auto;       
+.logo img { 
+  height: auto;       
   width: auto;        
-  max-height: 150px;  
+  max-height: 120px;  
   max-width: 100%;    
 }
 
@@ -149,12 +152,19 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 2000;
+  
 
+}
+#reservation-filial1{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: gray;
 }
 .reservation-content1 {
   
   background: #fff;
-  padding: 25px;
+  padding:10px 20px;
   width: 450px;
   text-align: center;
   position: relative;
@@ -173,9 +183,10 @@ header {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  
 }
 .reservation-content1 input {
-  padding: 10px;
+  padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   

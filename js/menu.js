@@ -160,8 +160,22 @@ function initSlider(jsonUrl, cardsGrid, pageInfo, pageButtonsContainer, prevBtn,
         </div>
       </div>
     `;
+    
 
-    document.querySelector("header").after(filterContainer);
+  document.querySelector("header").after(filterContainer);
+    
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+      filterContainer.style.top = "-180px"; 
+    } else {
+      filterContainer.style.top = "0"; 
+    }
+
+    lastScroll = currentScroll;
+  });
 
     MenuhamburgerBtn.addEventListener("click", () => {
       filterContainer.classList.toggle("show");

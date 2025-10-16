@@ -18,6 +18,25 @@ function initHeader() {
         headerElement.outerHTML = data;
       }
 
+       setTimeout(() => {
+        const header = document.getElementById('header');
+        if (header) {
+          let lastScroll = 0;
+
+          window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll) {
+              header.style.top = '-120px'; 
+            } else {
+              header.style.top = '0'; 
+            }
+
+            lastScroll = currentScroll;
+          });
+        }
+      }, 100);
+
       
       initNav();
       initReservation();
@@ -29,6 +48,16 @@ function initHeader() {
       
     });
 }
+
+function initNav() {
+  const nav = document.querySelector('nav');
+  const hamburger = document.querySelector('.hamburger');
+  if (!nav || !hamburger) return;
+
+  hamburger.addEventListener('click', () => nav.classList.toggle('show'));
+
+}
+
 
 
 function updateCartCounter() {
@@ -44,30 +73,6 @@ function updateCartCounter() {
   
 }
 
-
-function initNav() {
-  const nav = document.querySelector('nav');
-  const hamburger = document.querySelector('.hamburger');
-  if (!nav || !hamburger) return;
-
-  hamburger.addEventListener('click', () => nav.classList.toggle('show'));
-
-  const links = document.querySelectorAll(".nav-links a");
-
-  let path = window.location.pathname;
-
-  
-  if (path === "/" || path === "") path = "/index.html";
-
-  links.forEach(link => {
-    const href = link.getAttribute("href");
-
-    
-    if (href === path.split("/").pop()) {
-      link.classList.add("active");
-    }
-  });
-}
 
 function initReservation() {
   const popupHTML = `
@@ -95,7 +100,12 @@ function initReservation() {
           <input type="text" id="reservation-occasion1" placeholder="Birthday, Anniversary, etc.">
 
           <label for="reservation-filial1">Which Filial</label>
-          <input type="text" id="reservation-filial1" placeholder="Choose filial">
+          <select id="reservation-filial1" required>
+            <option value="">-- Choose a Filial --</option>
+            <option value="Nizami Street">123 Nizami Street, Baku</option>
+            <option value=" Javadkhan Street">45 Javadkhan Street, Ganja</option>
+            <option value="Heydar Aliyev Avenue">78 Heydar Aliyev Avenue, Sumgait</option>
+          </select>
 
           <label for="reservation-guests1">Number of Guests</label>
           <input type="number" id="reservation-guests1" placeholder="2" min="1" required>
@@ -127,6 +137,8 @@ function initReservation() {
     form.reset();
     popup.style.display = "none";
   });
+
+  
 }
 
 

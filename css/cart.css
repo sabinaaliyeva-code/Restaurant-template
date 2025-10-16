@@ -6,21 +6,25 @@
 }
 
 
+
 body { 
   font-family: Arial, sans-serif; 
   background-color:gainsboro;
   display: grid;
+  
 }
 .cart-area .bi-cart{
   float: right;
   font-size: 30px;
   color: darkolivegreen;
+  
 }
 .cart-area {
   display: flex;
   gap: 10px;
   padding: 10px 0;
-  
+  padding-top: 130px;
+  padding-left: 20px;
   
 }
 h2,h3,h4 { 
@@ -35,7 +39,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  margin: 30px;
   border-bottom: 1px solid #ccc;
   
 }
@@ -68,7 +72,7 @@ p{
   width: 200px;
 }
 .cart-summary{
-  margin: 20px;
+  margin: 30px;
 }
 
 
@@ -152,7 +156,8 @@ p{
   .cart-area{
     display: flex;
     flex-direction: row;
-    padding: 10px 30px ;
+    padding:  30px ;
+    padding-top: 100px;
   }
   .cart-area h2{
     font-size: 20px;
@@ -165,5 +170,6 @@ p{
        margin-top: 10px ;
        margin-bottom: 0px;
   }
+ 
 
 }

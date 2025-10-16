@@ -74,147 +74,114 @@ document.addEventListener("DOMContentLoaded", () => {
 
    
     const container = document.getElementById('slider-container');
-    const track = document.getElementById('slider-track');
-    if (container && track) { 
-        let originalSlides = Array.from(track.children);
-        const totalSlides = originalSlides.length;
+const track = document.getElementById('slider-track');
 
-        
-        track.innerHTML += track.innerHTML + track.innerHTML;
-        let slides = Array.from(track.children);
+if (container && track) { 
+  let originalSlides = Array.from(track.children);
+  const totalSlides = originalSlides.length;
 
-        
-        let currentIndex = totalSlides; 
-        let isTransitioning = false;
+  
+  track.innerHTML += track.innerHTML + track.innerHTML;
+  let slides = Array.from(track.children);
 
+  let currentIndex = totalSlides; 
+  let isTransitioning = false;
+  let autoSlideInterval;
 
-        
-
-
-function getSizes() {
+  
+  function getSizes() {
     if (!slides[0]) return { slideWidth: 0, slideOffset: 0, containerWidth: 0 };
     const slideStyle = window.getComputedStyle(slides[0]);
-    
-    
-    const slideWidth = slides[0].offsetWidth; 
-    const marginLeft = parseFloat(slideStyle.marginLeft) || 0; 
-    const marginRight = parseFloat(slideStyle.marginRight) || 0; 
-    const slideMargin = 4*marginLeft + marginRight; 
-    
-    const slideOffset = slideWidth + slideMargin; 
+    const slideWidth = slides[0].offsetWidth;
+    const marginLeft = parseFloat(slideStyle.marginLeft) || 0;
+    const marginRight = parseFloat(slideStyle.marginRight) || 0;
+    const slideMargin = 4 * marginLeft + marginRight;
+    const slideOffset = slideWidth + slideMargin;
     const containerWidth = container.clientWidth;
-
     return { slideWidth, slideOffset, containerWidth };
-}
+  }
 
-
-function getCenteredOffset(index) {
+  
+  function getCenteredOffset(index) {
     const { slideOffset, containerWidth, slideWidth } = getSizes();
-    
     const normalOffset = -index * slideOffset;
-    
-   
-    const centerAdjustment = (containerWidth / 2) - (slideWidth /2) - slideOffset;
-
-    
+    const centerAdjustment = (containerWidth / 2) - (slideWidth / 2) - slideOffset;
     return normalOffset + centerAdjustment;
-}
+  }
 
-
-        
-
-        
-function updateSlider(index = currentIndex, withTransition = true) {
+  
+  function updateSlider(index = currentIndex, withTransition = true) {
     const translateX = getCenteredOffset(index);
-    track.style.transition = withTransition ? 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'none';
+    track.style.transition = withTransition ? 'transform 0.5s ease' : 'none';
     track.style.transform = `translateX(${translateX}px)`;
 
-    
-    slides.forEach(s => s.classList.remove('active')); 
+    slides.forEach(s => s.classList.remove('active'));
+    const centerIndex = index + 1;
+    if (slides[centerIndex]) slides[centerIndex].classList.add('active');
 
-    const centerIndex = index + 1; 
-
-   
-    if (slides[centerIndex]) {
-        slides[centerIndex].classList.add('active');
-    }
-    
     currentIndex = index;
-}
-        
-        
-        function setupSlideClicks() {
-            slides.forEach((slide, index) => {
-                slide.onclick = (e) => {
-                    e.preventDefault();
-                    if (isTransitioning) return;
-                    
-                   
-                    const centerIndex = currentIndex + 1; 
+  }
 
-                    if (index === centerIndex) {
-                        currentIndex++; 
-                    } 
-                    
-                    else if (index < centerIndex) {
-                        currentIndex--; 
-                    }
-                    
-                    else if (index > centerIndex) {
-                        currentIndex++; 
-                    }
+  
+  function setupSlideClicks() {
+    slides.forEach((slide, index) => {
+      slide.onclick = (e) => {
+        e.preventDefault();
+        if (isTransitioning) return;
 
-                    if (index !== centerIndex) { 
-                        
-                    }
+        const centerIndex = currentIndex + 1;
+        if (index === centerIndex) currentIndex++;
+        else if (index < centerIndex) currentIndex--;
+        else if (index > centerIndex) currentIndex++;
 
-                    isTransitioning = true;
-                    updateSlider(currentIndex);
-                };
-            });
-        }
-
-
-        
-        track.addEventListener('transitionend', function handler() {
-            isTransitioning = false;
-            
-            
-            if (currentIndex >= totalSlides * 2) {
-                updateSlider(totalSlides, false);
-            }
-            
-            else if (currentIndex < totalSlides) {
-                updateSlider(totalSlides * 2 - 1, false); 
-            }
-        });
-
-       
-        window.addEventListener('resize', () => {
-            updateSlider(currentIndex, false);
-        });
-        
-        window.addEventListener('load', () => {
-            updateSlider(currentIndex, false);
-            setupSlideClicks();
-        });
-    }
-
-   
-    const chefCards = document.querySelectorAll(".chef-card");
-
-    chefCards.forEach(card => {
-        const social = card.querySelector(".social-icons");
-        if (social) {
-            card.addEventListener("mouseenter", () => {
-                social.style.opacity = "1";
-            });
-
-            card.addEventListener("mouseleave", () => {
-                social.style.opacity = "0";
-            });
-        }
+        isTransitioning = true;
+        updateSlider(currentIndex);
+      };
     });
+  }
+
+  
+  track.addEventListener('transitionend', function() {
+    isTransitioning = false;
+    if (currentIndex >= totalSlides * 2) {
+      updateSlider(totalSlides, false);
+    } else if (currentIndex < totalSlides) {
+      updateSlider(totalSlides * 2 - 1, false);
+    }
+  });
+
+  
+  function startAutoSlide() {
+    stopAutoSlide(); 
+    autoSlideInterval = setInterval(() => {
+      if (!isTransitioning) {
+        currentIndex++;
+        updateSlider(currentIndex);
+        isTransitioning = true;
+      }
+    }, 1500); 
+  }
+
+  function stopAutoSlide() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+  }
+
+  
+  container.addEventListener('mouseenter', stopAutoSlide);
+  container.addEventListener('mouseleave', startAutoSlide);
+
+  
+  window.addEventListener('resize', () => {
+    updateSlider(currentIndex, false);
+  });
+
+  window.addEventListener('load', () => {
+    updateSlider(currentIndex, false);
+    setupSlideClicks();
+    startAutoSlide(); 
+  });
+}
+
              
     (function () {
   const whatsappUrl = "#"; 
@@ -270,10 +237,16 @@ popup.innerHTML = `
     
     <label for="reservation-occasion">Occasion</label>
     <input type="text" id="reservation-occasion" placeholder="Birthday, Anniversary, etc.">
-
+     
     
     <label for="reservation-filial">Which Filial</label>
-    <input type="text" id="reservation-filial" placeholder="Choose filial">
+    <select id="reservation-filial" required>
+    <option value="">-- Choose a Filial --</option>
+    <option value="Nizami Street">123 Nizami Street, Baku</option>
+    <option value=" Javadkhan Street">45 Javadkhan Street, Ganja</option>
+    <option value="Heydar Aliyev Avenue">78 Heydar Aliyev Avenue, Sumgait</option>
+    </select>
+
 
     
     <label for="reservation-guests">Number of Guests</label>
@@ -303,6 +276,8 @@ window.addEventListener("click", (e) => {
     popup.style.display = "none";
   }
 });
+
+
 
 
 

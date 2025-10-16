@@ -10,24 +10,26 @@
 body {
   background-color: aliceblue;
   display:grid;
+  
 
 }
 
 
-.slideshow-container {
+.slideshow-container{
   width: 100%;
   position: relative;
   margin: auto;
   background-color: transparent;
+  padding-top: 120px;
   
 }
 
 .mySlides {
   display: none;
   transition: opacity 1s ease-in-out;
-  position: relative;
+  position:relative ;
   animation: fadeEffect 1.5s;
-  overflow: hidden; 
+  overflow: hidden;
   
 }
 
@@ -97,7 +99,7 @@ body {
 
 .mySlides img {
   width: 100%;
-  height: 550px;
+  height: 700px;
   object-fit: cover;
   animation: zoomEffect 15s ease infinite;
 }
@@ -297,12 +299,13 @@ h2 {
 }
 
 .popup-content input,
-.popup-content button {
+.popup-content button,
+#reservation-filial {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
-  font-size: 20px;
-  
+  font-size: 16px;
+  color:gray;
 }
 .popup-content button{
   background-color: orange;
@@ -313,6 +316,7 @@ h2 {
 .popup-content label{
   color: #555;
 }
+
 
 .close {
   position: absolute;
@@ -720,9 +724,14 @@ h2 {
 
 
 
-@media(max-width:780px){
+@media(max-width:1200px){
+     .slideshow-container{
+        padding-top: 122px;
+  
+      }
      .mySlides img{
-      height: 400px;
+      height: 560px;
+
      }
      .services{
       flex-wrap: wrap;
@@ -732,44 +741,78 @@ h2 {
       width: 500px;
       height: 520px;
      }
+     
      .card h3,
      .card p {
      padding: 12px 14px;
      font-size: 18px;
-     }
-     .about-section{
-      flex-wrap: wrap;
-      
      }
      .about-text p{
       font-size: 24px;
      }
      .about-img img{
       margin-bottom: 50px;
-      height: 450px;
+      height: 520px;
      }
      .chefs{
       flex-wrap: wrap;
+      padding: 0 30px;
      }
-     .chef-card img{
-      width:100%;
-      height: 460px;
-     }
-     .chef-card{
-      width: 500px;
-     }
+     
+     
+     
      .reservation-btn{
       padding: 16px;
       font-size: 20px;
      }
+     .slider-wrapper{
+     display: flex;
+     justify-content:center;
+     padding: 0;
+     }
+     .slider-container{
+      width: 90%;
+     }
+     .about-section{
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+     }
      
+     
+    
+
+ 
+
+  
+}
+@media(max-width:780px){
+  .slideshow-container{
+    top:-20px;
+  }
+  .mySlides img{
+    height: 600px;
+  }
+  .chefs{
+    flex-wrap: wrap;
+  }
+  .chef-card {
+    width: 100%;   
+    max-width: 420px; 
+  }
 }
 
 @media(max-width:480px){
+
+  .slideshow-container{
+  top: -60px;
+}
+
   
-   .mySlides img {
-    height: 200px; 
+  .mySlides img {
+    height: 260px; 
     object-fit: cover;
+   
   }
   .prev, .next {
     font-size: 14px;
@@ -790,7 +833,7 @@ h2 {
       font-size: 24px;
     }
     .services .card{
-      width: 90%;
+      width: 80%;
       height: 300px;
       margin: auto ;
      
@@ -931,6 +974,7 @@ h2 {
     width: 100%;
     padding-left: 30px; 
     padding-right: 30px;
+    background-color: white;
   }
 
 
@@ -945,24 +989,23 @@ h2 {
     }
 
   .faq-section {
-    max-width: 100%;      
-    margin: 20px auto;   
-    padding: 10px;       
+    max-width: 85%;             
     box-shadow: none;    
   }
-
-  .faq-item {
-    padding: 15px 10px;   
+  .faq-title{
+    font-size:14px;
   }
 
+  
+
   .faq-question {
-    font-size: 16px;      
+    font-size: 14px;      
   }
 
   .faq-toggle {
     width: 24px;
     height: 24px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .faq-answer {
@@ -979,6 +1022,7 @@ h2 {
   padding: 15px;
   border-radius: 5px;
   width: 80%;
+ 
  
 }
 
